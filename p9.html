@@ -1,0 +1,253 @@
+<html>
+	<head>
+		<title>BeagleBone Pinmuxing Reference</title>
+		<script type="text/json" id="scpt">
+		
+		
+		[["1","NA","GND","GND","NA","NA","NA","NA","NA","NA","NA","NA"],["2","NA","GND","GND","NA","NA","NA","NA","NA","NA","NA","NA"],["3","NA","VDD_3V3EXP","VDD_3V3EXP","NA","NA","NA","NA","NA","NA","NA","NA"],["4","NA","VDD_3V3EXP","VDD_3V3EXP","NA","NA","NA","NA","NA","NA","NA","NA"],["5","NA","VDD_5V","VDD_5V","NA","NA","NA","NA","NA","NA","NA","NA"],["6","NA","VDD_5V","VDD_5V","NA","NA","NA","NA","NA","NA","NA","NA"],["7","NA","SYS_5V","SYS_5V","NA","NA","NA","NA","NA","NA","NA","NA"],["8","NA","SYS_5V","SYS_5V","NA","NA","NA","NA","NA","NA","NA","NA"],["9","NA","PWR_BUT*","NA","NA","NA","NA","NA","NA","NA","NA"],["10","NA","RESET_OUT","RESET_OUT","NA","NA","NA","NA","NA","NA"],["11","0x070","gpmc_wait0","gpmc_wait0","mii2_crs","gpmc_csn4","rmii2_crs_dv","mmc1_sdcd","NA","uart4_rxd","gpio0[30]"],["12","0x078","gpmc_be1n","gpmc_be1n","mii2_col","gpmc_csn6","mmc2_dat3","gpmc_dir","NA","mcasp0_aclkr","gpio1[28]"],["13","0x074","gpmc_wpn","gpmc_wpn","mii2_rxerr","gpmc_csn5","rmii2_rxerr","mmc2_sdcd","NA","uart4_txd","gpio0[31]"],["14","0x040","gpmc_a2","gpmc_a2","mii2_txd3","rgmii2_td3","mmc2_dat1","gpmc_a18","NA","ehrpwm1A","gpio1[18]"],["15","0x048","gpmc_a0","gpmc_a0","gmii2_txen","rmii2_tctl","mii2_txen","gpmc_a16","NA","ehrpwm1_tripzone_input","gpio1[16]"],["16","0x04C","gpmc_a3","gpmc_a3","mii2_txd2","rgmii2_td2","mmc2_dat2","gpmc_a19","NA","ehrpwm1B","gpio1[19]"],["17","0x15C","spi0_cs0","spi0_cs0","mmc2_sdwp","i2c1_scl","ehrpwm0_synci","NA","NA","gpio0[5]"],["18","0x158","spi0_d1","spi0_d1","mmc1_sdwp","i2c1_sda","ehrpwm0_tripzone","NA","NA","gpio0[4]"],["19","0x17C","uart1_rtsn","uart1_rtsn","timer5","dcan0_rx","i2c2_scl","spi1_cs1","NA","gpio0[13]"],["20","0x178","uart1_ctsn","uart1_ctsn","timer6","dcan0_tx","i2c2_sda","spi1_cs0","NA","NA","gpio0[12]"],["21","0x154","spi0_d0","spi0_d0","uart2_txd","i2c2_scl","ehrpwm0B","NA","EMU3","gpio0[3]"],["22","0x150","spi0_sclk","spi0_sclk","uart2_rxd","i2c2_sda","ehrpwm0A","NA","EMU2","gpio0[2]"],["23","0x044","gpmc_a1","gpmc_a1","gmii2_rxdv","rgmii2_rxdv","mmc2_dat0","gpmc_a17","ehrpwm0_synco","gpio1[17]"],["24","0x084","uart1_txd","uart1_txd","mmc2_sdwp","dcan1_rx","i2c1_scl","NA","NA","NA","pru0_r31_16","gpio0[15]"],["25","0x1AC","mcasp0_ahclkx","mcasp0_ahclkx","eQEP0_strobe","mcasp0_axr3","mcasp1_axr1","EMU4","pru0_r30_7","pru0_r31_7","gpio3[21]"],["26","0x080","uart1_rxd","uart1_rxd","mmc1_sdwp","dcan1_tx","i2c1_sda","NA","NA","NA","pru1_r30_16","gpio0[14]"],["27","0x1A4","mcasp0_fsr","mcasp0_fsr","eQEP0B_in","mcasp0_axr3","mcasp1_fsx","EMU2","pru0_r30_5","pru0_r31_5","gpio3[19]"],["28","0x19C","mcasp0_ahclkr","mcasp0_ahclkr","ehrpwm0_synci","mcasp0_axr2","spi1_cs0","ecap2_in_pwm2_out","pru0_r30_3","pru0_r31_3","gpio3[17]"],["29","0x194","mcasp0_fsx","mcasp0_fsx","ehrpwm0B","spi1_d0","mmc1_sdcd","pru0_r30_1","pru0_r31_1","gpio3[15]"],["30","0x198","mcasp0_axr0","mcasp0_axr0","ehrpwm0_tripzone","NA","NA","spi1_d1","mmc2_sdcd","pru0_r30_2","pru0_r31_2","gpio3[16]"],["31","0x190","mcasp0_aclkx","mcasp0_aclkx","ehrpwm0A","spi1_sclk","mmc0_sdcd","pru0_r30_0","pru0_r31_0","gpio3[14]"],["32","NA","VDD_ADC","VADC","NA","NA","NA","NA","NA","NA","NA","NA"],["33","NA","AIN4","NA","NA","NA","NA","NA","NA","NA","NA"],["34","NA","GNDA_ADC","AGND","NA","NA","NA","NA","NA","NA","NA","NA"],["35","NA","AIN6","NA","NA","NA","NA","NA","NA","NA","NA"],["36","NA","AIN5","NA","NA","NA","NA","NA","NA","NA","NA"],["37","NA","AIN2","NA","NA","NA","NA","NA","NA","NA","NA"],["38","NA","AIN3","NA","NA","NA","NA","NA","NA","NA","NA"],["39","NA","AIN0","NA","NA","NA","NA","NA","NA","NA","NA"],["40","NA","AIN1","NA","NA","NA","NA","NA","NA","NA","NA"],["41","0x1B4","xdma_event_intr1","dma_event_intr1","NA","tclkins","clkout2","timer7","NA","EMU3","gpio0[20]"],["41point1","0x1A8","mcasp0_axr1","eQEPO_index4s","NA","mcasp1_axr0","EMU3","pru0_r30_6","pru0_r31_6","gpio3[20]"],["42","0x164","ecap0_in_pwm0_out","ecap0_in_pwm0_out","uart3_txd","spi1_cs1","pr1_ecap0_ecap_cap_in_apwm_o","spi1_sclk","mmc0_sdwp","xdma_event_intr2","gpio0[7]"],["42.1","0x1A0","gpio3_18","mcasp0_aclkr","eQEPO_in","mcasp0_axr2","mcasp1_aclkx","pru0_r30_4","pru0_r31_4","gpio3[18]"],["43","GND","NA","NA","NA","NA","NA","NA","NA","NA"],["44","GND","NA","NA","NA","NA","NA","NA","NA","NA"],["45","GND","NA","NA","NA","NA","NA","NA","NA","NA"],["46","GND","NA","NA","NA","NA","NA","NA","NA","NA"]]
+		
+		
+		</script>
+		<script src="./json-minified.js"></script><style type="text/css"></style>
+		<script type="text/javascript">
+			/*
+			var ptype = document.getElementById("ptype");
+			var pinId = document.getElementById("pinId");
+			var pinName = document.getElementById("pinName");
+			var mode = document.getElementById("mode");
+			var inputEnabled = document.getElementById("inputEnabled");
+			var puporpdown = document.getElementById("puporpdown");
+			var fast = document.getElementById("fast");
+			var registerOffset = document.getElementById("registerOffset");
+			var pinmuxMode  = document.getElementById("pinmuxMode");*/
+			var scpt = eval(document.getElementById('scpt').innerHTML);
+			var listOption;
+			var x = 1;
+			var offset;
+			var offsets = [];
+			var names = [];
+			var curRow = [];
+			var curRowNum;
+			var removeElements = [];
+			function startup() {
+				for(x=1; x<=48; x++){
+					var y = x - 1;
+					offsets = [];
+					names = [];
+					offsets.push(scpt[y][1]);
+					document.getElementById("pinName").options[x].value = scpt[x][2];
+					document.getElementById("pinName").options[x].innerHTML = scpt[x][2];
+				}
+			}
+			function change1() {
+				document.getElementById("pinName").selectedIndex = document.getElementById("pinId").selectedIndex;
+				curRowNum = document.getElementById("pinId").selectedIndex;
+				curRow = [];
+				curRow.push(scpt[curRowNum][3]);
+				curRow.push(scpt[curRowNum][4]);
+				curRow.push(scpt[curRowNum][5]);
+				curRow.push(scpt[curRowNum][6]);
+				curRow.push(scpt[curRowNum][7]);
+				curRow.push(scpt[curRowNum][8]);
+				curRow.push(scpt[curRowNum][9]);
+				curRow.push(scpt[curRowNum][10]);
+				curRow.push(scpt[curRowNum][11]);
+				
+				for(x=0; x<8; x++){
+					document.getElementById("mode").options[x].innerHTML = curRow[x];
+				}
+				offset = scpt[curRowNum][1];
+				document.getElementById("registerOffset").value = offset;
+			}
+			function change2() {
+				document.getElementById("pinId").selectedIndex = document.getElementById("pinName").selectedIndex;
+				curRowNum = document.getElementById("pinId").selectedIndex;
+				curRow = [];
+				curRow.push(scpt[curRowNum][3]);
+				curRow.push(scpt[curRowNum][4]);
+				curRow.push(scpt[curRowNum][5]);
+				curRow.push(scpt[curRowNum][6]);
+				curRow.push(scpt[curRowNum][7]);
+				curRow.push(scpt[curRowNum][8]);
+				curRow.push(scpt[curRowNum][9]);
+				curRow.push(scpt[curRowNum][10]);
+				curRow.push(scpt[curRowNum][11]);
+				
+				for(x=0; x<8; x++){
+					document.getElementById("mode").options[x].innerHTML = curRow[x];
+				}
+				offset = scpt[curRowNum][1];
+				document.getElementById("registerOffset").value = offset;
+			}
+			function calculate() {
+				var finishedProduct = "";
+				var decPinmux = document.getElementById("mode").selectedIndex;
+				if (document.getElementById("fast").checked == false){
+					decPinmux += 64;
+				}
+				if (document.getElementById("inputEnabled").checked == false){
+					decPinmux += 32;
+				}
+				if (document.getElementById("puporpdowndisabled").checked == false && document.getElementById("1").checked){
+					decPinmux += 16;
+				}
+				if (document.getElementById("puporpdowndisabled").checked){
+					decPinmux += 8;
+				}
+				var hexPinmux = decPinmux.toString(16);
+				if (hexPinmux.length == 2){
+					finishedProduct = "0x" + hexPinmux.toUpperCase();
+				} else {
+					finishedProduct = "0x0" + hexPinmux.toUpperCase();
+				}
+				document.getElementById("pinmuxMode").value = finishedProduct;
+			}
+		</script>
+	</head>
+	<body onload="startup();">
+		<form>
+			<input id="ptype" onclick="window.location = './index.html';" type="button" value="Go to P8">
+			<br>
+			<br>
+			<select id="pinId" onchange="change1();">
+				<option>Pin
+				</option><option value="1">1
+				</option><option value="2">2
+				</option><option value="3">3
+				</option><option value="4">4
+				</option><option value="5">5
+				</option><option value="6">6
+				</option><option value="7">7
+				</option><option value="8">8
+				</option><option value="9">9
+				</option><option value="10">10
+				</option><option value="11">11
+				</option><option value="12">12
+				</option><option value="13">13
+				</option><option value="14">14
+				</option><option value="15">15
+				</option><option value="16">16
+				</option><option value="17">17
+				</option><option value="18">18
+				</option><option value="19">19
+				</option><option value="20">20
+				</option><option value="21">21
+				</option><option value="22">22
+				</option><option value="23">23
+				</option><option value="24">24
+				</option><option value="25">25
+				</option><option value="26">26
+				</option><option value="27">27
+				</option><option value="28">28
+				</option><option value="29">29
+				</option><option value="30">30
+				</option><option value="31">31
+				</option><option value="32">32
+				</option><option value="33">33
+				</option><option value="34">34
+				</option><option value="35">35
+				</option><option value="36">36
+				</option><option value="37">37
+				</option><option value="38">38
+				</option><option value="39">39
+				</option><option value="40">40
+				</option><option value="41">41
+				</option><option value="41">41.1
+				</option><option value="42">42
+				</option><option value="42">42.1
+				</option><option value="43">43
+				</option><option value="44">44
+				</option><option value="45">45
+				</option><option value="46">46
+				</option>
+			</select>
+			<br>
+			<select id="pinName" onchange="change2();">
+				<option>Pin Name</option>
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+				<option value="NA">NA
+			</select>
+			<br>
+			Mode
+			<select id="mode" onchange="calculate();">
+				<option value="0">NA
+				</option><option value="1">NA
+				</option><option value="2">NA
+				</option><option value="3">NA
+				</option><option value="4">NA
+				</option><option value="5">NA
+				</option><option value="6">NA
+				</option><option value="7">NA
+			</option></select> 
+			<br>
+			
+			Input Enabled?
+			<input type="checkbox" id="inputEnabled" onchange="calculate();"> 
+			<br>
+			
+			PU/PD Disabled? 
+			<input type="checkbox" id="puporpdowndisabled" onchange="calculate();">  
+			Pull Up 
+			<input type="radio" id="1" name="pupd" onchange="calculate();">  
+			Pull Down
+			<input type="radio" id="2" name="pupd" onchange="calculate();">
+			<br> 
+			Fast?
+			<input type="checkbox" id="fast" onchange="calculate();"> 
+			<br>
+			<br>
+			Register Offset:
+			<input type="text" id="registerOffset">
+			<br>
+			<br>
+			Pinmux Mode:
+			<input type="text" id="pinmuxMode">
+		</form>
+	</body>
+</html>
